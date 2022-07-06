@@ -43,28 +43,28 @@
             </div>
         </section>
 
-        <section id="niveles">
-            <h2 class="niveles__titulo">Niveles de Entrenamiento</h2>
-            <div class="inicio__niveles-container">
-                <div class="wow animate__slideInLeft container__adultos level" data-wow-duration="1s">
-                    <h2 class="niveles__adultos">Entrenamiento para Adultos</h2>
+        <section id="niveles" class="container mt-5">
+            <div class="row d-flex justify-content-center">
+                <div class="level-item card wow animate__slideInLeft col-12 col-sm-10 col-md-8 col-lg-6 col-xl-5" data-wow-duration="1s">
+                    <img class="card-img-top" src="./img/chicos.jpg" alt="Card image cap">
+                    <h2 class="card-body">Entrenamiento para Niños</h2>
                     <a href="./pages/prueba.html"><button class="button">Clases de Prueba!</button></a>
                 </div>
-
-                <div class="wow animate__slideInRight container__chicos level" data-wow-duration="1s">
-                    <h2 class="niveles__chicos">Entrenamiento para Niños</h2>
+                
+                <div class="level-item card wow animate__slideInRight col-12 col-sm-10 col-md-8 col-lg-6 col-xl-5" data-wow-duration="1s">
+                    <img class="card-img-top" src="./img/adultos.jpg" alt="Crad image cap">
+                    <h2 class="card-body">Entrenamiento para Adultos</h2>
                     <a href="./pages/prueba.html"><button class="button">Clases de Prueba!</button></a>
                 </div>
             </div>
         </section>
 
-
         <section id="caracteristicas" class="container wow animate__bounceInRight" data-wow-duration="2s">
         <h2 class="text-center mb-5">Características</h2>
         <div class="row d-flex justify-content-center">
-            <div class="col-12 col-sm-10 col-md-8 col-xl-4 mb-5">
+            <div class="col-12 col-sm-10 col-md-8 col-xl-4 mb-5 caract__div">
                 <div class="card-deck">
-                    <div class="card">
+                    <div class="card card-caract">
                         <div class="card-body">
                             <i class="fas fa-comment"></i>
                             <h4 class="card-title">Comunicación Ideal!</h4>
@@ -74,9 +74,10 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-sm-10 col-md-8 col-xl-4 mb-5">
+
+            <div class="col-12 col-sm-10 col-md-8 col-xl-4 mb-5 caract__div">
                 <div class="card-deck">
-                    <div class="card">
+                    <div class="card card-caract">
                         <div class="card-body">
                             <i class="fa-solid fa-face-grin-wide"></i>
                             <h4 class="card-title">Profesores con Experiencia</h4>
@@ -86,9 +87,10 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-sm-10 col-md-8 col-xl-4 mb-5">
+
+            <div class="col-12 col-sm-10 col-md-8 col-xl-4 mb-5 caract__div">
                 <div class="card-deck">
-                    <div class="card">
+                    <div class="card card-caract">
                         <div class="card-body">
                             <i class="fa-solid fa-person-digging"></i>
                             <h4 class="card-title">Remodelación de Canchas</h4>
@@ -98,10 +100,13 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="container d-flex justify-content-center">
             <a href="./pages/nosotros.html"><input type="button" class="button" value="Ver Más!"></a>
         </div>
         </section>
     </main>
+
 
     <footer id="footer">
         <h3>Contactanos!</h3>

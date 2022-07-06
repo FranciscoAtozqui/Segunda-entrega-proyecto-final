@@ -112,49 +112,38 @@ section#inicio {
     font-size: 30px;
     text-align: center;
     margin-bottom: 50px;
-    color: #476b6b;
+    color: #BADA55;
     font-weight: bold;
 }
 
-.inicio__niveles-container{
-    display: grid;
-    grid-template-areas: "adultos chicos";
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-    gap: 5rem;
-    width: 80%;
-    margin: 0 auto;
-    height: 50vh;
-    color: #BADA55;
+.level-item{
+    border-radius: 6px;
+    margin: 15px 30px;
+    color: #476b6b;
+    cursor: pointer;
 }
 
-.container__adultos{
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), url("../img/adultos.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    grid-area: adultos;
-    
+.level-item:hover{
+    background-color: #808080;
+    color: #000;
+    transition: .4s;
 }
 
-.container__chicos{
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), url("../img/chicos.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    grid-area: chicos;
-}
-
-.level{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 30px;
-}
 /*SECCION CARACTERISTICAS INDEX*/
 
 #caracteristicas{
-    margin-top: 200px;
+    margin-top: 50px;
     color: #476b6b;
+}
+
+.caract__div{
+    cursor: pointer;
+}
+
+.card-caract:hover{
+    background-color: #476b6b;
+    color: #BADA55;
+    transition: .4s;
 }
 
 #caracteristicas i{
@@ -262,23 +251,53 @@ section#inicio {
 }
 
 .prueba__titulo{
-    color: #476b6b;
+    color: #BADA55;
     font-size: 80px;
 }
 
-aside{
-    text-align: center;
+.span__prueba{
+    color: #476b6b;
 }
 
-.aside__container{
+.div__prueba{
+    cursor: pointer;
+}
+
+.card-prueba:hover{
+    background-color: #476b6b;
+    transition: .3s;
+    color: #000;
+}
+
+.card-prueba{
+    color: #476b6b;
+    border-radius: 6px
+}
+
+#prueba__aside{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 30px;
+    align-items: center;
+    color: #000;
+    font-weight: bold;
+    font-size: 30px;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../img/aside-bg.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+    height: 400px;
+    width: 100%;
 }
 
-.aside__container div{
-    margin: 40px;
+
+
+#prueba__aside i{
+    font-size: 25px;
+    padding-right: 10px;
+}
+
+#prueba__aside i:hover{
+    color: #BADA55;
+    transition: .4s;
 }
 
 /*CONTACTO*/
@@ -338,6 +357,10 @@ footer{
 
     header h2{
         padding-top: 10px;
+    }
+
+    #prueba__aside{
+        background-position: 50% 50%;
     }
 
     .prueba__titulo{
